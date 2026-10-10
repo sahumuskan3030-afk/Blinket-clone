@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: 89px;
+
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+   position: sticky;
+   top: 0;
+
+}
+
+#logo {
+    display: flex;
+}
+
+#main {
+    color: orange;
+    font-size: 40px;
+    font-weight: 20px;
+}
+
+#head {
+    color: green;
+    font-size: 40px;
+    font-weight: 20px;
+
+}
+
+#sel {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#search {
+
+    border: 1px solid black;
+
+    align-items: center;
+    border-radius: 5px;
+}
+
+header input {
+    width: 500px;
+    height: 40px;
+
+}
+
+header button {
+    height: 40px;
+    width: 100px;
+}
+
+#login {
+    border-radius: 5px;
+    color: rgb(253, 250, 250);
+    background-color: black;
+    gap: 50px;
+}
+
+
+#cart button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    background-color: green;
+    cursor: pointer;
+}
+
+#cart:hover {
+    border: 2px black solid;
+}
+
+#content {
+    display: flex;
+    gap: 10px;
+}
+
+#content img {
+    height: 300px;
+    width: 500px;
+}
+
+#material {
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    header{
+        height:auto;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+    }
+    #logo{
+        flex-shrink: 0;
+    }
+    #main ,
+    #head{
+        font-size: 30px;
+    }
+    #sel{
+        width: 180px;
+    }
+    #search{
+        display: flex;
+        flex:1;
+        min-width: 150pc;
+    }
+    header input{
+        width: 100%;
+        min-width: 0;
+    }
+    #content{
+        flex-wrap: wrap;
+    }
+    #content img{
+        width: calc(50%-5px);
+        height: auto;
+    }
+    #image img{
+        width: 100%;
+        height:auto;
+    }
+ }
+
+
+ @media screen and (max-width: 480px) {
+
+    
+    header {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    
+    #main,
+    #head {
+        font-size: 26px;
+    }
+
+    
+    #sel {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    
+    #search {
+        order: 5;
+        flex-basis: 100%;
+        width: 100%;
+        min-width: 0;
+    }
+
+    #search input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    
+    #login {
+        width: auto;
+        padding: 0 12px;
+    }
+
+    
+    #cart button {
+        width: auto;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+   
+    #image {
+        width: 100%;
+    }
+
+    #image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+   
+    #content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #content img {
+        width: 100%;
+        height: auto;
+    }
+
+   
+    .material {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+    }
+
+    .material img {
+        width: 110px;
+        height: 110px;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+}
